@@ -18,7 +18,7 @@ import boto3.ec2
 from botocore.exceptions import ClientError
 
 VERSION = '1.5.0'
-region = 'ap-south-1'
+region = 'ap-south-1' #Provide the Region Code Here
 ec2 = boto3.client('ec2', region_name=region)
 
 
@@ -138,7 +138,7 @@ def main():
     """
     The entry point of this program.
     """
-    Mem.instance_id = "i-0e660645cec8fe0da"
+    Mem.instance_id = "i-0e660645cec8fe0da" #Provide the Instance ID Here
     args = parse_arguments()
     sys.stdout.write(str(evaluate(args)))
     print()
